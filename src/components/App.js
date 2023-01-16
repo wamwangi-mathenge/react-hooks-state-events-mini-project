@@ -17,7 +17,14 @@ function App() {
     setTasks([...tasks, addTask])
   }
 
+  function handleDeleteTask(deleteTask) {
+    setTasks([tasks.filter((task) => task.text != deleteTask)])
+  }
 
+
+  const showTasks = tasks.filter(
+    (task) => category === "All" || task.category === category
+  )
 
 
   return (
