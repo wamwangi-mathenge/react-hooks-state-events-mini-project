@@ -19,7 +19,7 @@ function CategoryFilter({ categories, selectedCategory, onSelectCategory }) {
   return (
     <div className="categories">
       <h5>Category filters</h5>
-      {/* render <button> elements for each category here */}
+      {categoryButton}
     </div>
   );
 }

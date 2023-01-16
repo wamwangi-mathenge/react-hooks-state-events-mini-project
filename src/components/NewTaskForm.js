@@ -22,7 +22,7 @@ function NewTaskForm({ onFormSubmit, categories}) {
       </label>
       <label>
         Category
-        <select onChange={(event) => setCategory(event.target.value)} name="category">
+        <select onChange={(event) => setCategory(event.target.value)} name="category" value="category">
           {categories.map((cat) => (
             <option key={cat}>{cat}</option>
           ))}
